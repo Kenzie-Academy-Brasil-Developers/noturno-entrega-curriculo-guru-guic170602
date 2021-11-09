@@ -1,5 +1,44 @@
+body,
+div,
+a,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+	padding: 0;
+	margin: 0;
+	color: whitesmoke;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Rokkitt', 'Arial', sans-serif;;
+}
+
+body{
+	background: rgb(15, 15, 21);
+}
+
 .clear {
 	clear: both;
+}
+
+div#cv{
+	background: rgb(44, 44, 44);
+	margin: 20px auto;
+	width: 800px;
+	padding: 30px 10px;
+	box-shadow: 5px 5px 10px rgb(54, 73, 73);
+}
+
+.mainDetails{
+	align-items: center;
+	padding-bottom: 10px;
+	border-bottom: goldenrod 2px solid;
+	margin-bottom: 25px;
+	padding: 10px 3.5rem;
 }
 
 #headshot {
@@ -16,6 +55,37 @@
 	float: right;
 }
 
+#mainArea h1{
+	font-size: 1.5rem;
+	color: goldenrod;
+	font-weight: 500;
+	font-style: italic;
+}
+
+h2{
+	font-weight: 300;
+}
+
+#headshot img{
+	border-radius: 100px 100px 100px 100px;
+	height: 6.5rem;
+	margin-right: 20px;
+}
+
+#name, #contactDetails{
+	margin-top: 20px;
+}
+
+section:nth-last-child(1){
+	margin: 20px 70px;
+}
+
+section:not(:nth-last-child(1)){
+	border-bottom: 1px solid slategrey;
+	padding-bottom: 15px;
+	margin: 20px 70px;
+}
+
 .sectionTitle {
 	float: left;
 	width: 25%;
@@ -24,4 +94,10 @@
 .sectionContent {
 	float: right;
 	width: 72.5%;
+}
+
+.keySkills{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
 }
